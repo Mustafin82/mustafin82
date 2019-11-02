@@ -1,0 +1,27 @@
+﻿--CREATE PROCEDURE [dbo].[Procedure1]
+--	@LastName int,
+--	@Datevyp date,
+--	@Summ decimal(18,2),
+--	@position int,
+--	@typevypl int
+--AS
+--begin
+--set nocount on;
+--if @Summ<0 return 1;
+--begin try
+--    begin transaction
+--	insert into Zarplata (Lastname,[Date],Summ,typevypl)
+--	values (@Lastname,@datevyp,@Position,@typevypl);
+--	insert into Operation (summ,[Date])
+--	values (@Summ,@Datevyp);
+--	commit transaction
+--end try
+--begin catch
+--     rollback transaction
+--	 print error_number();
+--	 print error_message();
+--	 return 2;
+--end catch
+	
+--RETURN 0
+--end
